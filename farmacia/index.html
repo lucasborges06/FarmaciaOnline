@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo-container">
+            <a href="index.html" class="logo">Farmácia Online</a>
+        </div>
+        <nav class="menu">
+            <a href="#produtos">Produtos</a>
+            <a href="#vantagens">Vantagens</a>
+            <a href="#contato">Contato</a>
+            <a href="#comentarios">Comentários</a>
+        </nav>
+        <button id="modo-noturno-btn" class="toggle-noturno" aria-label="Alternar modo noturno">
+            <span class="icone-sol">☀️</span>
+            <span class="icone-lua">🌙</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1>Sua Saúde em Foco. Sua Vida em Movimento.</h1>
+                <p>Encontre os melhores medicamentos, produtos de beleza e cuidados pessoais com a conveniência da entrega online.</p>
+                <a href="#produtos" class="botao-principal">Explorar Produtos</a>
+            </div>
+        </section>
+
+        <section id="produtos" class="secao-produtos container">
+            <h2>Produtos em Destaque</h2>
+            <div class="lista-produtos">
+                </div>
+        </section>
+
+        <section id="vantagens" class="secao-vantagens">
+            <div class="container">
+                <h2>Por que escolher a Farmácia Online?</h2>
+                <div class="lista-vantagens">
+                    <div class="vantagem-item">
+                        <span class="icone">🚚</span>
+                        <h3>Entrega Rápida</h3>
+                        <p>Receba seus pedidos em tempo recorde, com segurança e praticidade.</p>
+                    </div>
+                    <div class="vantagem-item">
+                        <span class="icone">👩‍⚕️</span>
+                        <h3>Atendimento Humanizado</h3>
+                        <p>Nossa equipe de especialistas está pronta para te ajudar 24h por dia.</p>
+                    </div>
+                    <div class="vantagem-item">
+                        <span class="icone">🌟</span>
+                        <h3>Qualidade Garantida</h3>
+                        <p>Trabalhamos apenas com produtos originais e de alta qualidade para sua saúde.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao-contato">
+            <div class="container">
+                <h2>Precisa de Ajuda?</h2>
+                <div class="contato-info">
+                    <p>Entre em contato conosco por telefone ou envie uma mensagem diretamente.</p>
+                    <div class="contato-detalhes">
+                        <div class="contato-link">
+                            <span class="icone">📞</span>
+                            <p><strong>Telefone:</strong> (11) 98765-4321</p>
+                        </div>
+                        <div class="contato-link">
+                            <span class="icone">📧</span>
+                            <p><strong>E-mail:</strong> contato@farmaciaonline.com.br</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="form-contato">
+                    <h3>Envie sua Mensagem</h3>
+                    <input type="text" name="nome" placeholder="Seu Nome Completo" required>
+                    <input type="email" name="email" placeholder="Seu Melhor E-mail" required>
+                    <textarea name="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    <button type="submit" class="botao-principal">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="comentarios" class="secao-comentarios">
+            <div class="container">
+                <h2>O que nossos clientes dizem</h2>
+                <div class="lista-comentarios">
+                    <div class="comentario">
+                        <h3>Ana S.</h3>
+                        <p>"Entrega rápida e produtos de qualidade. O site é muito fácil de usar!"</p>
+                    </div>
+                    <div class="comentario">
+                        <h3>Pedro L.</h3>
+                        <p>"Atendimento impecável! Tiraram todas as minhas dúvidas com muita paciência."</p>
+                    </div>
+                    <div class="comentario">
+                        <h3>Clara M.</h3>
+                        <p>"Adorei a seção de promoções. Economizei bastante!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="footer-conteudo container">
+            <p>&copy; 2024 Farmácia Online. Todos os direitos reservados.</p>
+            <div class="redes-sociais">
+                <a href="#" aria-label="Acesse nosso Facebook"><span class="icone"></span></a>
+                <a href="#" aria-label="Acesse nosso Instagram"><span class="icone"></span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

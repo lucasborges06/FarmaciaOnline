@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo-container">
+            <a href="index.html" class="logo">Farmácia Online</a>
+        </div>
+        <nav class="menu">
+            <a href="index.html#produtos">Produtos</a>
+            <a href="index.html#vantagens">Vantagens</a>
+            <a href="index.html#contato">Contato</a>
+            <a href="index.html#comentarios">Comentários</a>
+        </nav>
+        <button id="modo-noturno-btn" class="toggle-noturno">Modo Noturno</button>
+    </header>
+
+    <main>
+        <section class="secao-pagamento container">
+            <h2>Finalizar Compra</h2>
+            <div class="resumo-compra">
+                <h3>Resumo do Pedido</h3>
+                <p id="nome-produto-pagamento"></p>
+                <p id="preco-produto-pagamento"></p>
+            </div>
+            <form id="form-pagamento" class="formulario-pagamento">
+                <h3>Dados de Pagamento</h3>
+                <input type="text" name="nome_cartao" placeholder="Nome Completo no Cartão" required>
+                <input type="text" name="numero_cartao" placeholder="Número do Cartão" required>
+                <div class="info-cartao">
+                    <input type="text" name="validade_cartao" placeholder="Validade (MM/AA)" required>
+                    <input type="text" name="cvv_cartao" placeholder="CVV" required>
+                </div>
+                <button type="submit" class="botao-principal">Pagar Agora</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="footer-conteudo container">
+            <p>&copy; 2024 Farmácia Online. Todos os direitos reservados.</p>
+            <div class="redes-sociais">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
